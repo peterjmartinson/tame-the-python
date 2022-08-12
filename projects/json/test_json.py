@@ -1,5 +1,5 @@
 
-def test__Contains_seventh_son_of_seventh_son(self):
+def test__Contains_seventh_son_of_seventh_son():
     contains_seventh_son_of_seventh_son = {
         'name': 'A',
         'gender': 'male',
@@ -51,7 +51,7 @@ def test__Contains_seventh_son_of_seventh_son(self):
     }
     test.assert_equals(find_seventh_sons_of_seventh_sons(json.dumps(contains_seventh_son_of_seventh_son)), {'O'}) 
 
-def test__Would-be_seventh_son_of_seventh_son_is_a_daughter(self):
+def test__Would_be_seventh_son_of_seventh_son_is_a_daughter():
     does_not_contain_seventh_son_of_seventh_son = {
         'name': 'A',
         'gender': 'male',
@@ -103,7 +103,7 @@ def test__Would-be_seventh_son_of_seventh_son_is_a_daughter(self):
     }
     test.assert_equals(find_seventh_sons_of_seventh_sons(json.dumps(does_not_contain_seventh_son_of_seventh_son)), set()) 
 
-def test__Chain_of_sons_is_broken(self):
+def test__Chain_of_sons_is_broken():
     does_not_contain_seventh_son_of_seventh_son = {
         'name': 'A',
         'gender': 'male',
@@ -156,7 +156,7 @@ def test__Chain_of_sons_is_broken(self):
     test.assert_equals(find_seventh_sons_of_seventh_sons(json.dumps(does_not_contain_seventh_son_of_seventh_son)), set()) 
 
 
-def test__Seventh_son_does_not_have_children(self):
+def test__Seventh_son_does_not_have_children():
     does_not_contain_seventh_son_of_seventh_son = {
         'name': 'A',
         'gender': 'male',
